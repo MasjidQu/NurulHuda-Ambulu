@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel - Masjid Nurul Huda</title>
+    <meta name="description" content="" id="metaDescription" />
+    <meta property="og:title" content="" id="ogTitle" />
+    <meta property="og:description" content="" id="ogDescription" />
+    <meta property="og:image" content="" id="ogImage" />
+    <meta property="og:type" content="article" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/blog-detail.css" />
+    <link rel="stylesheet" href="./assets/css/blog-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Islamic Background Pattern -->
+    <div class="islamic-pattern-bg"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline arabic-text">نُورُ الْهُدَى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link active">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Article Hero Section -->
+      <section class="article-hero" id="articleHero">
+        <div class="article-hero-bg">
+          <div class="article-hero-image" id="heroImage"></div>
+          <div class="article-hero-overlay"></div>
+          <div class="article-hero-geometric"></div>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="hero-decor hero-decor-left">
+          <svg viewBox="0 0 100 100" class="islamic-star">
+            <polygon points="50,5 61,40 97,40 68,62 79,97 50,75 21,97 32,62 3,40 39,40" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="hero-decor hero-decor-right">
+          <svg viewBox="0 0 100 100" class="islamic-star">
+            <polygon points="50,5 61,40 97,40 68,62 79,97 50,75 21,97 32,62 3,40 39,40" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <div class="container">
+          <div class="article-hero-content">
+            <!-- Breadcrumb -->
+            <nav class="article-breadcrumb">
+              <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+              <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+              <a href="blog.html"><i class="fas fa-newspaper"></i> Blog</a>
+              <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+              <span class="breadcrumb-current" id="breadcrumbTitle">Artikel</span>
+            </nav>
+
+            <!-- Category Badge -->
+            <div class="article-category-badge" id="articleCategory">
+              <i class="fas fa-folder-open"></i>
+              <span>Kategori</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="article-title" id="articleTitle">Memuat artikel...</h1>
+
+            <!-- Meta Info -->
+            <div class="article-meta-bar">
+              <div class="meta-item">
+                <div class="author-avatar" id="authorAvatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="meta-text">
+                  <span class="meta-label">Penulis</span>
+                  <span class="meta-value" id="authorName">Admin</span>
+                </div>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <div class="meta-icon">
+                  <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="meta-text">
+                  <span class="meta-label">Dipublikasikan</span>
+                  <span class="meta-value" id="articleDate">-</span>
+                </div>
+              </div>
+              <div class="meta-divider"></div>
+              <div class="meta-item">
+                <div class="meta-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="meta-text">
+                  <span class="meta-label">Waktu Baca</span>
+                  <span class="meta-value" id="readingTime">5 menit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Bottom Wave -->
+        <div class="hero-wave">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#fdfbf7"/>
+          </svg>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="article-layout">
+          <!-- Main Content -->
+          <article class="article-content">
+            <!-- Loading State -->
+            <div class="article-loading" id="articleLoading">
+              <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+              </div>
+              <p>Memuat artikel...</p>
+            </div>
+
+            <!-- Error State -->
+            <div class="article-error" id="articleError" style="display: none;">
+              <div class="error-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+              </div>
+              <h2>Artikel Tidak Ditemukan</h2>
+              <p>Maaf, artikel yang Anda cari tidak dapat ditemukan.</p>
+              <a href="blog.html" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Kembali ke Blog
+              </a>
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body" id="articleBody" style="display: none;">
+              <!-- Featured Image -->
+              <div class="article-featured-image" id="featuredImageContainer" style="display: none;">
+                <img src="" alt="" id="featuredImage" />
+                <div class="image-caption" id="imageCaption"></div>
+              </div>
+
+              <!-- Article Content -->
+              <div class="article-text" id="articleText">
+                <!-- Content will be loaded here -->
+              </div>
+
+              <!-- Tags -->
+              <div class="article-tags" id="articleTags" style="display: none;">
+                <span class="tags-label"><i class="fas fa-tags"></i> Tags:</span>
+                <div class="tags-list" id="tagsList">
+                  <!-- Tags will be loaded here -->
+                </div>
+              </div>
+
+              <!-- Share Section -->
+              <div class="article-share">
+                <span class="share-label"><i class="fas fa-share-alt"></i> Bagikan:</span>
+                <div class="share-buttons">
+                  <a href="#" class="share-btn facebook" id="shareFacebook" target="_blank" title="Bagikan ke Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="share-btn twitter" id="shareTwitter" target="_blank" title="Bagikan ke Twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="share-btn whatsapp" id="shareWhatsapp" target="_blank" title="Bagikan ke WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="#" class="share-btn telegram" id="shareTelegram" target="_blank" title="Bagikan ke Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                  <button class="share-btn copy" id="copyLink" title="Salin Link">
+                    <i class="fas fa-link"></i>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Author Box -->
+              <div class="author-box">
+                <div class="author-box-avatar" id="authorBoxAvatar">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="author-box-info">
+                  <h4>Ditulis oleh</h4>
+                  <h3 id="authorBoxName">Admin</h3>
+                  <p id="authorBoxBio">Kontributor artikel di Masjid Nurul Huda</p>
+                </div>
+              </div>
+
+              <!-- Navigation -->
+              <div class="article-navigation">
+                <a href="#" class="nav-prev" id="navPrev" style="display: none;">
+                  <span class="nav-label"><i class="fas fa-arrow-left"></i> Sebelumnya</span>
+                  <span class="nav-title" id="prevTitle">-</span>
+                </a>
+                <a href="#" class="nav-next" id="navNext" style="display: none;">
+                  <span class="nav-label">Selanjutnya <i class="fas fa-arrow-right"></i></span>
+                  <span class="nav-title" id="nextTitle">-</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="article-sidebar">
+            <!-- Categories Widget -->
+            <div class="sidebar-widget">
+              <h3><i class="fas fa-folder"></i> Kategori</h3>
+              <ul class="category-list">
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+
+            <!-- Related Posts Widget -->
+            <div class="sidebar-widget">
+              <h3><i class="fas fa-newspaper"></i> Artikel Terkait</h3>
+              <div class="related-posts" id="relatedPosts">
+                <div class="loading-small">Memuat...</div>
+              </div>
+            </div>
+
+            <!-- Recent Posts Widget -->
+            <div class="sidebar-widget">
+              <h3><i class="fas fa-clock"></i> Postingan Terbaru</h3>
+              <div class="recent-posts" id="recentPosts">
+                <div class="loading-small">Memuat...</div>
+              </div>
+            </div>
+
+            <!-- Back to Blog -->
+            <div class="sidebar-widget sidebar-cta">
+              <div class="cta-content">
+                <i class="fas fa-book-open"></i>
+                <h4>Jelajahi Lebih Banyak</h4>
+                <p>Temukan artikel menarik lainnya di blog kami</p>
+                <a href="blog.html" class="cta-btn">
+                  <i class="fas fa-arrow-left"></i> Lihat Semua Artikel
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-mosque"></i>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p class="footer-tagline arabic-text">بَيْتُ اللَّهِ</p>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <p><i class="fas fa-phone"></i> +62 812 9000 0276</p>
+            <p><i class="fas fa-envelope"></i> info@masjidnurulhuda.com</p>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.799561!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                width="100%"
+                height="150"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-verse">
+          <p class="arabic-text">"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"</p>
+          <p class="verse-translation">"Hanya yang memakmurkan masjid Allah ialah orang-orang yang beriman kepada Allah dan hari kemudian" (QS. At-Taubah: 18)</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copy Link Toast -->
+    <div class="toast" id="toast">
+      <i class="fas fa-check-circle"></i>
+      <span>Link berhasil disalin!</span>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="blog-detail.js"></script>
+  </body>
+</html>

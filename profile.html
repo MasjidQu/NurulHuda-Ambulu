@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Organisasi - Masjid Nurul Huda</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Islamic Decorative Elements -->
+    <div class="islamic-pattern-bg"></div>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline">مسجد نور الهدى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link active">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section - Profil Organisasi -->
+      <section class="profile-hero">
+        <div class="profile-hero-overlay"></div>
+        <div class="hero-islamic-decoration">
+          <div class="geometric-pattern left"></div>
+          <div class="geometric-pattern right"></div>
+        </div>
+        <div class="container">
+          <div class="profile-hero-content">
+            <div class="profile-hero-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <h1 class="profile-hero-title">Profil Organisasi</h1>
+            <p class="profile-hero-subtitle">Mengenal Lebih Dekat DKM Masjid Nurul Huda</p>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Tentang Kami Section -->
+        <section class="about-section">
+          <div class="about-content">
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop"
+                alt="Meeting"
+              />
+              <div class="about-image-decoration">
+                <span class="decoration-text">☪</span>
+              </div>
+            </div>
+            <div class="about-text">
+              <p class="section-label">
+                <i class="fas fa-star"></i> Tentang Kami
+              </p>
+              <h2 class="section-title">Profil Khidmat Umat</h2>
+              <div class="about-description">
+                <p>
+                  Kami hadir sebagai mitra strategis bagi masyarakat dan pelaku
+                  usaha lokal dalam mengembangkan ekonomi berbasis syariah.
+                  Dengan komitmen penuh terhadap kesejahteraan umat, kami
+                  berupaya memaksimalkan potensi yang ada untuk memberikan
+                  manfaat yang luas.
+                </p>
+                <p>
+                  Organisasi kami berlandaskan pada prinsip-prinsip
+                  <strong>Amanah, Keadilan, dan Kemandirian</strong>. Melalui
+                  pendekatan yang terstruktur dan berkelanjutan, kami
+                  mengembangkan berbagai program yang bertujuan untuk
+                  memberdayakan umat secara ekonomi, sosial, dan spiritual.
+                </p>
+                <p>
+                  Sebagai wadah ukhuwah, kami senantiasa berupaya menciptakan
+                  sinergi antara berbagai elemen masyarakat untuk mewujudkan
+                  kemaslahatan bersama yang berkelanjutan dan penuh keberkahan.
+                </p>
+              </div>
+              <a href="#" class="read-more-btn">
+                <span>Pelajari Lebih Lanjut</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-vision-section">
+          <div class="mission-vision-content">
+            <div class="mission-vision-text">
+              <div class="section-icon-small">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h2 class="section-title-large">Visi & Misi Kami</h2>
+              <div class="tabs">
+                <button class="tab-btn active" data-tab="visi">
+                  <i class="fas fa-eye"></i> Visi
+                </button>
+                <button class="tab-btn" data-tab="misi">
+                  <i class="fas fa-tasks"></i> Misi
+                </button>
+              </div>
+              <div class="tab-content active" id="visi-content">
+                <div class="tab-card">
+                  <p>
+                    Menjadi organisasi Islam terdepan dalam mewujudkan masyarakat
+                    yang mandiri, berkah, dan berdaya melalui penerapan
+                    nilai-nilai Islam dan pemberdayaan ekonomi syariah yang
+                    berkelanjutan.
+                  </p>
+                  <p>
+                    Kami bercita-cita menciptakan ekosistem dakwah yang amanah,
+                    sejuk, dan memberdayakan, di mana setiap anggota masyarakat
+                    dapat berkembang secara optimal dalam bingkai nilai-nilai
+                    Islam.
+                  </p>
+                </div>
+              </div>
+              <div class="tab-content" id="misi-content">
+                <div class="tab-card">
+                  <ul class="misi-list">
+                    <li>
+                      <i class="fas fa-check-circle"></i>
+                      Mengembangkan program-program dakwah yang inovatif dan relevan
+                      dengan kebutuhan umat.
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>
+                      Membimbing kemandirian ekonomi syariah serta membuka jalan bagi
+                      potensi lokal untuk memberikan manfaat luas.
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>
+                      Menjalin kerjasama strategis dengan berbagai pihak untuk
+                      memperkuat jaringan dakwah dan pemberdayaan umat.
+                    </li>
+                    <li>
+                      <i class="fas fa-check-circle"></i>
+                      Membangun sistem manajemen organisasi yang profesional,
+                      akuntabel, dan berkelanjutan.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mission-vision-images">
+              <div class="image-grid">
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop"
+                    alt="Activity 1"
+                  />
+                  <div class="grid-item-overlay">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop"
+                    alt="Activity 2"
+                  />
+                  <div class="grid-item-overlay">
+                    <i class="fas fa-users"></i>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+                    alt="Activity 3"
+                  />
+                  <div class="grid-item-overlay">
+                    <i class="fas fa-handshake"></i>
+                  </div>
+                </div>
+                <div class="grid-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop"
+                    alt="Activity 4"
+                  />
+                  <div class="grid-item-overlay">
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Program Strategis Section -->
+        <section class="profile-programs-section">
+          <div class="section-header-center">
+            <div class="section-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h2>Program Strategis</h2>
+            <p>
+              Untuk mewujudkan dan mengimplementasikan Visi, Misi, dan Rencana
+              Strategis, organisasi telah menyiapkan program unggulan yang
+              multi-parti.
+            </p>
+          </div>
+          <div class="programs-grid">
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3>Program Jangka Pendek</h3>
+              <ul>
+                <li>Konsolidasi jemaah dan pendataan anggota</li>
+                <li>Penyelenggaraan kajian rutin mingguan</li>
+                <li>Optimalisasi layanan media dakwah digital</li>
+                <li>Pelatihan manajemen masjid dan organisasi</li>
+              </ul>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Program Jangka Menengah</h3>
+              <ul>
+                <li>Pusat Literasi & Perpustakaan Islam</li>
+                <li>Layanan Zakat, Infak, & Sedekah</li>
+                <li>Rehabilitasi Sarana Prasarana Dakwah</li>
+                <li>Inisiasi Pemberdayaan Ekonomi Umat</li>
+              </ul>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3>Program Jangka Panjang</h3>
+              <ul>
+                <li>Pembangunan Kompleks Pendidikan</li>
+                <li>Sinergi Jaringan Dakwah Nasional</li>
+                <li>Kemandirian Finansial Organisasi</li>
+                <li>Pusat Rujukan Solusi Keumatan</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Struktur Kepengurusan Section -->
+        <section class="structure-section">
+          <div class="section-header-center">
+            <div class="section-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h2>Struktur Kepengurusan</h2>
+            <p>
+              Berikut adalah jajaran pengurus yang mengemban amanah dalam
+              menjalankan roda organisasi:
+            </p>
+          </div>
+          <div class="structure-grid" id="structureGrid">
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Dr. H. Ahmad Fauzi</h3>
+              <p>Ketua Umum</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Ust. Muhammad</h3>
+              <p>Sekretaris Umum</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>H. Sulaiman Effendi</h3>
+              <p>Bendahara Umum</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>KH. Ahmad Syarifuddin</h3>
+              <p>Dewan Penasihat</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Ust. Dr. Lukman</h3>
+              <p>Ketua Bidang Dakwah & Pendidikan</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Ir. Hendra Kurniawan</h3>
+              <p>Ketua Bidang Pemberdayaan Umat</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>H. Agus Sulistyo</h3>
+              <p>Ketua Bidang Sosial & Filantropi</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Rahmat Hidayat</h3>
+              <p>Ketua Bidang Hubungan Masyarakat</p>
+            </div>
+            <div class="structure-card">
+              <div class="structure-image">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Fikri Haikal, S.Kom</h3>
+              <p>Ketua Media & IT</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-mosque"></i>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p class="footer-tagline arabic-text">بَيْتُ اللَّهِ</p>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <p><i class="fas fa-phone"></i> +62 812 9000 0276</p>
+            <p><i class="fas fa-envelope"></i> info@masjidnurulhuda.com</p>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.799561!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                width="100%"
+                height="150"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-verse">
+          <p class="arabic-text">"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"</p>
+          <p class="verse-translation">"Hanya yang memakmurkan masjid Allah ialah orang-orang yang beriman kepada Allah dan hari kemudian" (QS. At-Taubah: 18)</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infaq - Masjid Nurul Huda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/infaq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Islamic Background Pattern -->
+    <div class="islamic-pattern-bg"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline arabic-text">نُورُ الْهُدَى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn active">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Infaq Hero Section -->
+      <section class="infaq-hero">
+        <div class="infaq-hero-overlay"></div>
+        <div class="infaq-hero-geometric left"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="infaq-hero-geometric right"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="container">
+          <div class="infaq-hero-content">
+            <p class="infaq-hero-arabic arabic-text">الصَّدَقَةُ</p>
+            <div class="infaq-hero-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h1 class="infaq-hero-title">Infaq & Sedekah</h1>
+            <p class="infaq-hero-subtitle">
+              "Barangsiapa yang meminjami Allah dengan pinjaman yang baik, maka
+              Allah akan melipatgandakan balasan pinjaman itu untuknya dan dia
+              akan memperoleh pahala yang banyak."
+            </p>
+            <p class="infaq-hero-verse">(QS. Al-Hadid: 11)</p>
+          </div>
+        </div>
+        <div class="infaq-hero-pattern"></div>
+        <div class="scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- QRIS Section -->
+        <section class="qris-section">
+          <div class="section-header-center">
+            <div class="section-icon">
+              <i class="fas fa-qrcode"></i>
+            </div>
+            <h2>Pembayaran via QRIS</h2>
+            <p>Scan QR Code di bawah ini untuk melakukan infaq secara langsung</p>
+          </div>
+          <div class="qris-container">
+            <div class="qris-card">
+              <div class="qris-image-wrapper">
+                <img id="qrisImage" src="" alt="QRIS Masjid Nurul Huda" loading="lazy" />
+                <div class="qris-overlay">
+                  <button class="copy-qris-btn" onclick="downloadQRIS()">
+                    <i class="fas fa-download"></i> Download QRIS
+                  </button>
+                </div>
+              </div>
+              <div class="qris-info">
+                <h3>QRIS Masjid Nurul Huda</h3>
+                <p>Scan QR Code ini menggunakan aplikasi e-wallet atau mobile banking Anda</p>
+                <div class="supported-apps">
+                  <span class="app-badge">
+                    <i class="fab fa-google-pay"></i> Google Pay
+                  </span>
+                  <span class="app-badge">
+                    <i class="fas fa-mobile-alt"></i> OVO
+                  </span>
+                  <span class="app-badge">
+                    <i class="fas fa-wallet"></i> DANA
+                  </span>
+                  <span class="app-badge">
+                    <i class="fas fa-credit-card"></i> LinkAja
+                  </span>
+                  <span class="app-badge">
+                    <i class="fas fa-university"></i> Mobile Banking
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bank Accounts Section -->
+        <section class="bank-accounts-section">
+          <div class="section-header-center">
+            <div class="section-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <h2>Transfer Bank</h2>
+            <p>Transfer infaq melalui rekening bank berikut ini</p>
+          </div>
+          <div class="bank-accounts-grid" id="bankAccountsGrid">
+            <!-- Bank accounts will be populated by JavaScript -->
+          </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="infaq-info-section">
+          <div class="info-cards-grid">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-info-circle"></i>
+              </div>
+              <h3>Informasi Penting</h3>
+              <ul>
+                <li>Pastikan nama pengirim sesuai dengan nama Anda</li>
+                <li>Simpan bukti transfer untuk konfirmasi</li>
+                <li>Infaq akan digunakan untuk operasional masjid</li>
+                <li>Laporan keuangan tersedia di website</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Keamanan</h3>
+              <ul>
+                <li>Pastikan Anda transfer ke rekening resmi masjid</li>
+                <li>Jangan memberikan informasi rekening kepada pihak lain</li>
+                <li>Hubungi kami jika ada yang mencurigakan</li>
+                <li>Verifikasi nomor rekening sebelum transfer</li>
+              </ul>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3>Konfirmasi</h3>
+              <ul>
+                <li>Kirim bukti transfer ke WhatsApp kami</li>
+                <li>Atau email ke alamat resmi masjid</li>
+                <li>Kami akan mengirimkan konfirmasi penerimaan</li>
+                <li>Terima kasih atas kepercayaan Anda</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="infaq-cta-section">
+          <div class="cta-content">
+            <h2>Bersama Membangun Masjid yang Lebih Baik</h2>
+            <p>
+              Setiap infaq yang Anda berikan akan membantu kami dalam
+              mengembangkan program-program dakwah dan pemberdayaan umat
+            </p>
+            <div class="cta-buttons">
+              <a href="contact.html" class="cta-btn-primary">
+                <i class="fas fa-envelope"></i> Hubungi Kami
+              </a>
+              <a href="blog.html" class="cta-btn-secondary">
+                <i class="fas fa-book"></i> Lihat Program
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-mosque"></i>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p class="footer-tagline arabic-text">بَيْتُ اللَّهِ</p>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <p><i class="fas fa-phone"></i> +62 812 9000 0276</p>
+            <p><i class="fas fa-envelope"></i> info@masjidnurulhuda.com</p>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.599691112011!2d113.60700500000002!3d-8.342512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69b6517e45ae3%3A0x829f0a64dafd48f8!2sMasjid%20Nurul%20Huda!5e0!3m2!1sid!2sid!4v1768313681134!5m2!1sid!2sid"
+                width="100%"
+                height="150"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-verse">
+          <p class="arabic-text">"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"</p>
+          <p class="verse-translation">"Hanya yang memakmurkan masjid Allah ialah orang-orang yang beriman kepada Allah dan hari kemudian" (QS. At-Taubah: 18)</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="infaq.js"></script>
+  </body>
+</html>

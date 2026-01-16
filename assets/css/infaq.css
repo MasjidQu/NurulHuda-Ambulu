@@ -1,0 +1,826 @@
+/* Infaq Hero Section */
+.infaq-hero {
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(to bottom, 
+            rgba(26, 95, 74, 0.95) 0%, 
+            rgba(13, 148, 136, 0.9) 50%,
+            rgba(212, 175, 55, 0.4) 100%),
+        url('https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1920&q=80') center/cover;
+    background-attachment: fixed;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.infaq-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-islamic, linear-gradient(135deg, rgba(26, 95, 74, 0.9) 0%, rgba(13, 148, 136, 0.85) 100%));
+}
+
+.infaq-hero-geometric {
+    position: absolute;
+    font-size: 350px;
+    opacity: 0.05;
+    color: var(--white, #fff);
+    animation: rotate-slow 60s linear infinite;
+    z-index: 0;
+}
+
+.infaq-hero-geometric.left {
+    left: -120px;
+    bottom: -80px;
+}
+
+.infaq-hero-geometric.right {
+    right: -120px;
+    top: -80px;
+    animation-direction: reverse;
+}
+
+@keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.infaq-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--white, #fff);
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.infaq-hero-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 56px;
+    color: var(--gold-color, #d4af37);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.infaq-hero-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(212, 175, 55, 0.5);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.infaq-hero-icon i {
+    font-size: 55px;
+    color: var(--gold-color, #d4af37);
+}
+
+.infaq-hero-title {
+    font-size: 52px;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.infaq-hero-subtitle {
+    font-size: 18px;
+    opacity: 0.95;
+    line-height: 1.9;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 10px;
+}
+
+.infaq-hero-verse {
+    font-size: 14px;
+    opacity: 0.8;
+    color: var(--gold-color, #d4af37);
+    font-weight: 600;
+}
+
+.infaq-hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.08'%3E%3Cpath d='M40 0l40 40-40 40L0 40 40 0zm0 10L10 40l30 30 30-30-30-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(-15px); }
+    60% { transform: translateX(-50%) translateY(-8px); }
+}
+
+/* Section Header Center */
+.qris-section .section-header-center,
+.bank-accounts-section .section-header-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.qris-section .section-icon,
+.bank-accounts-section .section-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-islamic, linear-gradient(135deg, #1a5f4a 0%, #0d9488 100%));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 10px 30px rgba(26, 95, 74, 0.25);
+}
+
+.qris-section .section-icon i,
+.bank-accounts-section .section-icon i {
+    font-size: 36px;
+    color: white;
+}
+
+.qris-section .section-header-center h2,
+.bank-accounts-section .section-header-center h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--islamic-green, #1a5f4a);
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.qris-section .section-header-center p,
+.bank-accounts-section .section-header-center p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* QRIS Section */
+.qris-section {
+    margin-bottom: 80px;
+}
+
+.qris-container {
+    display: flex;
+    justify-content: center;
+}
+
+.qris-card {
+    background: var(--white, #fff);
+    border-radius: 24px;
+    padding: 45px;
+    box-shadow: var(--shadow-medium, 0 10px 40px rgba(0, 0, 0, 0.1));
+    max-width: 520px;
+    width: 100%;
+    border: 2px solid rgba(26, 95, 74, 0.1);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.qris-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-gold, linear-gradient(90deg, #d4af37 0%, #f4e5a3 50%, #d4af37 100%));
+}
+
+.qris-card:hover {
+    box-shadow: var(--shadow-strong, 0 15px 60px rgba(0, 0, 0, 0.15));
+    border-color: rgba(212, 175, 55, 0.3);
+    transform: translateY(-5px);
+}
+
+.qris-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background: linear-gradient(135deg, #fdfbf7 0%, #f5f5f5 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    border: 3px solid rgba(26, 95, 74, 0.1);
+}
+
+.qris-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: var(--white, #fff);
+    padding: 20px;
+}
+
+.qris-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 95, 74, 0.85) 0%, rgba(13, 148, 136, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 16px;
+}
+
+.qris-image-wrapper:hover .qris-overlay {
+    opacity: 1;
+}
+
+.copy-qris-btn {
+    background: linear-gradient(135deg, #d4af37 0%, #f4e5a3 50%, #d4af37 100%);
+    color: var(--islamic-green, #1a5f4a);
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.copy-qris-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
+.qris-info {
+    text-align: center;
+}
+
+.qris-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--islamic-green, #1a5f4a);
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.qris-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.supported-apps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.app-badge {
+    background: linear-gradient(135deg, rgba(26, 95, 74, 0.08) 0%, rgba(212, 175, 55, 0.08) 100%);
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    color: var(--islamic-green, #1a5f4a);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(26, 95, 74, 0.15);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.app-badge:hover {
+    background: linear-gradient(135deg, rgba(26, 95, 74, 0.15) 0%, rgba(212, 175, 55, 0.15) 100%);
+    transform: translateY(-2px);
+}
+
+.app-badge i {
+    color: var(--gold-color, #d4af37);
+}
+
+/* Bank Accounts Section */
+.bank-accounts-section {
+    margin-bottom: 80px;
+}
+
+.bank-accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.bank-account-card {
+    background: var(--white, #fff);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--shadow-soft, 0 4px 20px rgba(0, 0, 0, 0.05));
+    border: 2px solid rgba(26, 95, 74, 0.1);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.bank-account-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-gold, linear-gradient(90deg, #d4af37 0%, #f4e5a3 50%, #d4af37 100%));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bank-account-card:hover::before {
+    opacity: 1;
+}
+
+.bank-account-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium, 0 10px 40px rgba(0, 0, 0, 0.1));
+    border-color: var(--gold-color, #d4af37);
+}
+
+.bank-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(26, 95, 74, 0.1);
+}
+
+.bank-icon {
+    width: 65px;
+    height: 65px;
+    background: var(--gradient-islamic, linear-gradient(135deg, #1a5f4a 0%, #0d9488 100%));
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 6px 20px rgba(26, 95, 74, 0.25);
+}
+
+.bank-icon i {
+    font-size: 28px;
+    color: var(--white, #fff);
+}
+
+.bank-name {
+    flex: 1;
+}
+
+.bank-name h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--islamic-green, #1a5f4a);
+    margin-bottom: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bank-name p {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.account-details {
+    margin-bottom: 20px;
+}
+
+.account-number {
+    background: linear-gradient(135deg, #fdfbf7 0%, rgba(26, 95, 74, 0.05) 100%);
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 15px;
+    border: 2px dashed rgba(212, 175, 55, 0.3);
+}
+
+.account-number-label {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.account-number-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--islamic-green, #1a5f4a);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy-btn {
+    background: linear-gradient(135deg, rgba(26, 95, 74, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+    border: none;
+    color: var(--gold-color, #d4af37);
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.copy-btn:hover {
+    background: linear-gradient(135deg, rgba(26, 95, 74, 0.2) 0%, rgba(212, 175, 55, 0.2) 100%);
+    transform: scale(1.1);
+}
+
+.account-name {
+    font-size: 15px;
+    color: #444;
+    font-weight: 600;
+}
+
+.account-name-label {
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Info Section */
+.infaq-info-section {
+    margin-bottom: 80px;
+}
+
+.info-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.info-card {
+    background: var(--white, #fff);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--shadow-soft, 0 4px 20px rgba(0, 0, 0, 0.05));
+    border: 1px solid rgba(26, 95, 74, 0.1);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.05), transparent);
+    transition: left 0.5s;
+}
+
+.info-card:hover::before {
+    left: 100%;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium, 0 10px 40px rgba(0, 0, 0, 0.1));
+    border-color: rgba(212, 175, 55, 0.3);
+}
+
+.info-card-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-islamic, linear-gradient(135deg, #1a5f4a 0%, #0d9488 100%));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(26, 95, 74, 0.25);
+}
+
+.info-card-icon i {
+    font-size: 30px;
+    color: var(--white, #fff);
+}
+
+.info-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--islamic-green, #1a5f4a);
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-card ul li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(26, 95, 74, 0.08);
+}
+
+.info-card ul li:last-child {
+    border-bottom: none;
+}
+
+.info-card ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--gold-color, #d4af37);
+    font-size: 14px;
+}
+
+/* CTA Section */
+.infaq-cta-section {
+    background: var(--gradient-islamic, linear-gradient(135deg, #1a5f4a 0%, #0d9488 100%));
+    border-radius: 24px;
+    padding: 70px 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    box-shadow: var(--shadow-strong, 0 15px 60px rgba(0, 0, 0, 0.15));
+    position: relative;
+    overflow: hidden;
+}
+
+.infaq-cta-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M40 0l40 40-40 40L0 40 40 0zm0 10L10 40l30 30 30-30-30-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: var(--white, #fff);
+    margin-bottom: 18px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-content p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 35px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-btn-primary,
+.cta-btn-secondary {
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.cta-btn-primary {
+    background: var(--gradient-gold, linear-gradient(90deg, #d4af37 0%, #f4e5a3 50%, #d4af37 100%));
+    color: var(--islamic-green, #1a5f4a);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.cta-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+.cta-btn-secondary {
+    background: transparent;
+    color: var(--white, #fff);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.cta-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+    transform: translateY(-3px);
+}
+
+/* Notification Styles */
+.infaq-notification {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: var(--white, #fff);
+    padding: 20px 28px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-strong, 0 15px 60px rgba(0, 0, 0, 0.15));
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 10000;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-left: 5px solid var(--gold-color, #d4af37);
+    max-width: 400px;
+}
+
+.infaq-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.infaq-notification.success {
+    border-left-color: #10b981;
+}
+
+.infaq-notification.success i {
+    color: #10b981;
+}
+
+.infaq-notification.error {
+    border-left-color: #ef4444;
+}
+
+.infaq-notification.error i {
+    color: #ef4444;
+}
+
+.infaq-notification.info {
+    border-left-color: var(--islamic-green, #1a5f4a);
+}
+
+.infaq-notification.info i {
+    color: var(--islamic-green, #1a5f4a);
+}
+
+.infaq-notification i {
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.infaq-notification span {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .infaq-hero {
+        min-height: 450px;
+    }
+    
+    .infaq-hero-arabic {
+        font-size: 36px;
+    }
+    
+    .infaq-hero-title {
+        font-size: 32px;
+    }
+    
+    .infaq-hero-subtitle {
+        font-size: 15px;
+    }
+    
+    .infaq-hero-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .infaq-hero-icon i {
+        font-size: 42px;
+    }
+    
+    .infaq-hero-geometric {
+        display: none;
+    }
+    
+    .qris-section .section-header-center h2,
+    .bank-accounts-section .section-header-center h2 {
+        font-size: 28px;
+    }
+    
+    .qris-section .section-icon,
+    .bank-accounts-section .section-icon {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .qris-section .section-icon i,
+    .bank-accounts-section .section-icon i {
+        font-size: 28px;
+    }
+    
+    .qris-card {
+        padding: 30px 20px;
+    }
+    
+    .bank-accounts-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-content h2 {
+        font-size: 26px;
+    }
+    
+    .cta-content p {
+        font-size: 15px;
+    }
+    
+    .infaq-cta-section {
+        padding: 50px 25px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-btn-primary,
+    .cta-btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .infaq-notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        transform: translateY(-100px);
+    }
+    
+    .infaq-notification.show {
+        transform: translateY(0);
+    }
+}

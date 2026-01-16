@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Masjid Nurul Huda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Islamic Background Pattern -->
+    <div class="islamic-pattern-bg"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline arabic-text">نُورُ الْهُدَى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link active">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Contact Hero Section -->
+      <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-geometric"></div>
+        <div class="contact-hero-geometric left"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="contact-hero-geometric right"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="container">
+          <div class="contact-hero-content">
+            <p class="contact-hero-arabic arabic-text">التَّوَاصُل</p>
+            <div class="contact-hero-icon">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <h1 class="contact-hero-title">Hubungi Kami</h1>
+            <p class="contact-hero-subtitle">
+              Kami siap membantu dan melayani Anda dengan sepenuh hati
+            </p>
+          </div>
+        </div>
+        <div class="contact-hero-pattern"></div>
+        <div class="contact-hero-scroll">
+          <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Contact Info Cards -->
+        <section class="contact-info-section">
+          <div class="contact-cards-grid">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Alamat</h3>
+              <p id="contactAddress">Loading...</p>
+              <a href="#map-section" class="contact-card-link">
+                Lihat Peta <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Telepon</h3>
+              <p>+62 812 9000 0276</p>
+              <a href="tel:+6281290000276" class="contact-card-link">
+                Hubungi Sekarang <i class="fas fa-phone"></i>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <p>info@masjidnurulhuda.com</p>
+              <a
+                href="mailto:info@masjidnurulhuda.com"
+                class="contact-card-link"
+              >
+                Kirim Email <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Jam Operasional</h3>
+              <p>Setiap Hari</p>
+              <p class="contact-hours">24 Jam</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Main Content Layout -->
+        <div class="contact-layout">
+          <!-- Left: Contact Form -->
+          <div class="contact-form-section">
+            <div class="section-header">
+              <h2>Kirim Pesan</h2>
+              <p>Isi form di bawah ini untuk mengirim pesan kepada kami</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">
+                  <i class="fas fa-user"></i> Nama Lengkap
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Masukkan nama lengkap Anda"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">
+                  <i class="fas fa-envelope"></i> Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="nama@email.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">
+                  <i class="fas fa-phone"></i> No. Telepon
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="08xx xxxx xxxx"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject"> <i class="fas fa-tag"></i> Subjek </label>
+                <select id="subject" name="subject" required>
+                  <option value="">Pilih Subjek</option>
+                  <option value="informasi">Informasi Umum</option>
+                  <option value="kegiatan">Kegiatan & Program</option>
+                  <option value="donasi">Donasi & Zakat</option>
+                  <option value="konsultasi">Konsultasi Agama</option>
+                  <option value="lainnya">Lainnya</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  <i class="fas fa-comment-alt"></i> Pesan
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  placeholder="Tuliskan pesan Anda di sini..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <i class="fas fa-paper-plane"></i> Kirim Pesan
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Map & Additional Info -->
+          <div class="contact-sidebar">
+            <!-- Map Section -->
+            <div class="map-section" id="map-section">
+              <h3><i class="fas fa-map"></i> Lokasi Kami</h3>
+              <div class="map-container">
+                <iframe
+                  id="mapFrame"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.799561!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                  width="100%"
+                  height="400"
+                  style="border: 0; border-radius: 12px"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="social-section">
+              <h3><i class="fas fa-share-alt"></i> Media Sosial</h3>
+              <p>Ikuti kami di media sosial untuk mendapatkan update terbaru</p>
+              <div class="social-links-grid">
+                <a href="#" class="social-link-card facebook">
+                  <div class="social-link-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <div class="social-link-info">
+                    <h4>Facebook</h4>
+                    <p>@masjidnurulhuda</p>
+                  </div>
+                  <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+
+                <a href="#" class="social-link-card instagram">
+                  <div class="social-link-icon">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="social-link-info">
+                    <h4>Instagram</h4>
+                    <p>@masjidnurulhuda</p>
+                  </div>
+                  <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+
+                <a href="#" class="social-link-card youtube">
+                  <div class="social-link-icon">
+                    <i class="fab fa-youtube"></i>
+                  </div>
+                  <div class="social-link-info">
+                    <h4>YouTube</h4>
+                    <p>Masjid Nurul Huda</p>
+                  </div>
+                  <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+
+                <a href="#" class="social-link-card whatsapp">
+                  <div class="social-link-icon">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="social-link-info">
+                    <h4>WhatsApp</h4>
+                    <p>+62 812 9000 0276</p>
+                  </div>
+                  <i class="fas fa-arrow-right social-arrow"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="additional-info">
+              <h3><i class="fas fa-info-circle"></i> Informasi Tambahan</h3>
+              <div class="info-item">
+                <i class="fas fa-parking"></i>
+                <div>
+                  <strong>Parkir</strong>
+                  <p>Tersedia area parkir yang luas dan aman</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-wheelchair"></i>
+                <div>
+                  <strong>Aksesibilitas</strong>
+                  <p>Fasilitas ramah disabilitas tersedia</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-wifi"></i>
+                <div>
+                  <strong>WiFi Gratis</strong>
+                  <p>Internet gratis untuk jamaah</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-book-quran"></i>
+                <div>
+                  <strong>Perpustakaan</strong>
+                  <p>Perpustakaan dengan koleksi buku Islam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-mosque"></i>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p class="footer-tagline arabic-text">بَيْتُ اللَّهِ</p>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <p><i class="fas fa-phone"></i> +62 812 9000 0276</p>
+            <p><i class="fas fa-envelope"></i> info@masjidnurulhuda.com</p>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.799561!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                width="100%"
+                height="150"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-verse">
+          <p class="arabic-text">"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"</p>
+          <p class="verse-translation">"Hanya yang memakmurkan masjid Allah ialah orang-orang yang beriman kepada Allah dan hari kemudian" (QS. At-Taubah: 18)</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

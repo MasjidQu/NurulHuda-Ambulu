@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masjid Nurul Huda - Beranda</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Islamic Decorative Elements -->
+    <div class="islamic-pattern-bg"></div>
+    
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline">مسجد نور الهدى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link active">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-islamic-decoration">
+          <div class="geometric-pattern left"></div>
+          <div class="geometric-pattern right"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-arabic-text">ٱلسَّلَامُ عَلَيْكُمْ</div>
+            <p class="hero-subtitle">Selamat datang di Website</p>
+            <h1 class="hero-title">Hadir untuk Membangun dan Memandirikan</h1>
+            <p class="hero-description">
+              Melalui semangat ukhuwah, kami mendampingi umat dengan ketulusan,
+              membimbing kemandirian ekonomi syariah, serta membuka jalan bagi
+              potensi lokal untuk memberikan manfaat luas.
+            </p>
+            <div class="hero-buttons">
+              <a href="#kegiatan-dkm" class="hero-btn primary">
+                <i class="fas fa-calendar-alt"></i> Lihat Kegiatan
+              </a>
+              <a href="#latest-articles" class="hero-btn secondary">
+                <i class="fas fa-newspaper"></i> Artikel Terbaru
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Membangun Ukhuwah Section -->
+        <section class="ukhuwah-section">
+          <div class="ukhuwah-content">
+            <div class="ukhuwah-text">
+              <p class="section-label">
+                <i class="fas fa-star"></i> Pusat Informasi Pengetahuan dan Dakwah
+              </p>
+              <h2 class="section-title">
+                Membangun Ukhuwah, Menjalin Kebersamaan untuk Negeri
+              </h2>
+              <p class="section-description">
+                Kami hadir sebagai wadah perjuangan untuk mendampingi umat
+                dengan penuh ketulusan. Kami menerapkan setiap langkah
+                dijalankan dengan prinsip amanah dan syariah, guna menciptakan
+                proses masyarakat akan menyajikan rasa memiliki yang harmonis,
+                budaya, dan penuh keberkahan.
+              </p>
+              <a href="#" class="read-more-btn">
+                <span>Selengkapnya</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="ukhuwah-illustration">
+              <div class="islamic-pattern-circle">
+                <div class="pattern-inner">
+                  <div class="mosque-icon-wrapper">
+                    <i class="fas fa-mosque"></i>
+                  </div>
+                  <div class="crescent-star">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="floating-elements">
+                <span class="float-element e1">☪</span>
+                <span class="float-element e2">✦</span>
+                <span class="float-element e3">✧</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Kegiatan DKM / Masjid Section -->
+        <section class="dkm-activities-section" id="kegiatan-dkm">
+          <div class="section-header-center">
+            <div class="section-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h2>Kegiatan DKM & Masjid</h2>
+            <p>
+              Berbagai kegiatan rutin dan program DKM untuk memakmurkan masjid dan membina umat
+            </p>
+          </div>
+          
+          <div class="dkm-activities-grid">
+            <!-- Kegiatan Harian -->
+            <div class="activity-category">
+              <div class="category-header daily">
+                <i class="fas fa-sun"></i>
+                <h3>Kegiatan Harian</h3>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-pray"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Sholat 5 Waktu Berjamaah</h4>
+                    <p><i class="fas fa-clock"></i> Sesuai jadwal sholat</p>
+                    <p><i class="fas fa-user"></i> Imam: Ust. Ahmad</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-book-quran"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Tadarus Al-Quran</h4>
+                    <p><i class="fas fa-clock"></i> Ba'da Subuh & Maghrib</p>
+                    <p><i class="fas fa-users"></i> Jamaah Umum</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-child"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>TPA (Taman Pendidikan Al-Quran)</h4>
+                    <p><i class="fas fa-clock"></i> 15:30 - 17:00 WIB</p>
+                    <p><i class="fas fa-users"></i> Anak-anak</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kegiatan Mingguan -->
+            <div class="activity-category">
+              <div class="category-header weekly">
+                <i class="fas fa-calendar-week"></i>
+                <h3>Kegiatan Mingguan</h3>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-microphone"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Kajian Ahad Pagi</h4>
+                    <p><i class="fas fa-clock"></i> Minggu, 06:00 - 07:30</p>
+                    <p><i class="fas fa-user"></i> Pemateri: Ustadz bergantian</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-book-open"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Kajian Kitab Fiqih</h4>
+                    <p><i class="fas fa-clock"></i> Jumat, 15:00 - 16:00</p>
+                    <p><i class="fas fa-user"></i> Ust. H. Sulaiman</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-female"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Majelis Taklim Ibu-ibu</h4>
+                    <p><i class="fas fa-clock"></i> Rabu, 09:00 - 11:00</p>
+                    <p><i class="fas fa-user"></i> Ustadzah Fatimah</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Pengajian Remaja Masjid</h4>
+                    <p><i class="fas fa-clock"></i> Sabtu, 19:30 - 21:00</p>
+                    <p><i class="fas fa-user"></i> Pembina Remaja</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kegiatan Bulanan -->
+            <div class="activity-category">
+              <div class="category-header monthly">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Kegiatan Bulanan</h3>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-hands-helping"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Santunan Anak Yatim</h4>
+                    <p><i class="fas fa-clock"></i> Minggu ke-1</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Aula Masjid</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-box-open"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Pembagian Sembako</h4>
+                    <p><i class="fas fa-clock"></i> Minggu ke-2</p>
+                    <p><i class="fas fa-users"></i> Dhuafa & Fakir Miskin</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-broom"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Kerja Bakti Masjid</h4>
+                    <p><i class="fas fa-clock"></i> Minggu ke-3, 07:00</p>
+                    <p><i class="fas fa-users"></i> Jamaah & Warga</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-heartbeat"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Donor Darah</h4>
+                    <p><i class="fas fa-clock"></i> Minggu ke-4</p>
+                    <p><i class="fas fa-handshake"></i> Kerjasama PMI</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kegiatan Tahunan -->
+            <div class="activity-category">
+              <div class="category-header yearly">
+                <i class="fas fa-star-and-crescent"></i>
+                <h3>Kegiatan Tahunan</h3>
+              </div>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-moon"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Pesantren Kilat Ramadhan</h4>
+                    <p><i class="fas fa-clock"></i> Bulan Ramadhan</p>
+                    <p><i class="fas fa-users"></i> Anak-anak & Remaja</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Pembagian Zakat Fitrah</h4>
+                    <p><i class="fas fa-clock"></i> Akhir Ramadhan</p>
+                    <p><i class="fas fa-users"></i> Mustahik</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-cow"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Penyembelihan Qurban</h4>
+                    <p><i class="fas fa-clock"></i> Idul Adha</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Halaman Masjid</p>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Peringatan Hari Besar Islam</h4>
+                    <p><i class="fas fa-clock"></i> Sesuai kalender Hijriyah</p>
+                    <p><i class="fas fa-users"></i> Seluruh Jamaah</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dkm-cta">
+            <p>Ingin berkontribusi dalam kegiatan masjid?</p>
+            <a href="contact.html" class="dkm-cta-btn">
+              <i class="fas fa-hand-holding-heart"></i> Hubungi Kami
+            </a>
+          </div>
+        </section>
+
+        <!-- Berita & Artikel Terbaru -->
+        <section class="latest-articles-section" id="latest-articles">
+          <div class="section-header-center">
+            <h2>Artikel & Berita Terbaru</h2>
+          </div>
+          <div class="articles-grid" id="latestArticlesGrid">
+            <div class="loading">Memuat artikel terbaru...</div>
+          </div>
+        </section>
+        <script>
+          // Pastikan fungsi/fetch artikel sudah ada di app.js, ini hanya contoh render
+          document.addEventListener('DOMContentLoaded', function () {
+            if (typeof getLatestArticles === 'function') {
+              getLatestArticles(6).then(function (articles) {
+                const grid = document.getElementById('latestArticlesGrid');
+                if (!articles || articles.length === 0) {
+                  grid.innerHTML = '<div class="loading">Belum ada artikel.</div>';
+                  return;
+                }
+                grid.innerHTML = '';
+                articles.forEach(function (a) {
+                  const card = document.createElement('div');
+                  card.className = 'article-card';
+                  card.innerHTML = `
+                    ${a.image ? `<div class="article-image"><img src="${a.image}" alt="${a.title}"></div>` : ''}
+                    <div class="article-content">
+                      <h3 class="article-title">${a.title}</h3>
+                      <div class="article-meta">
+                        <span class="article-author"><i class="fas fa-user"></i> ${a.author || 'Admin'}</span>
+                        <span class="article-date"><i class="fas fa-calendar"></i> ${a.date || ''}</span>
+                      </div>
+                    </div>
+                  `;
+                  grid.appendChild(card);
+                });
+              });
+            }
+          });
+        </script>
+
+        <!-- Prinsip Perjuangan -->
+        <section class="principles-section">
+          <div class="principles-content">
+            <div class="principles-text">
+              <div class="section-header-left">
+                <h2>Prinsip Perjuangan</h2>
+                <p>
+                  Setiap langkah perjuangan kami berlandaskan nilai-nilai Islam
+                  yang kuat, memberikan teladan bagi umat, membimbing jamaah
+                  dengan penuh keikhlasan.
+                </p>
+              </div>
+              <div class="principles-blocks">
+                <div class="principle-block">
+                  <h3>Keberlanjutan (Istiqomah)</h3>
+                  <p>
+                    Komitmen jangka panjang dalam upaya sosial dan dakwah yang
+                    berkelanjutan, membangun fondasi yang kuat untuk
+                    kemaslahatan umat.
+                  </p>
+                </div>
+                <div class="principle-block">
+                  <h3>Amanah (Trust)</h3>
+                  <p>
+                    Integritas dalam setiap program dan pengelolaan dana,
+                    memastikan transparansi dan akuntabilitas dalam setiap
+                    langkah perjuangan.
+                  </p>
+                </div>
+                <div class="principle-block">
+                  <h3>Dedikasi (Dedication)</h3>
+                  <p>
+                    Dedikasi penuh untuk kesejahteraan dan pemberdayaan umat,
+                    dengan semangat pengabdian yang tulus dan ikhlas.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="principles-illustration">
+              <div class="arabic-calligraphy">محمد</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Program Strategis -->
+        <section class="programs-section">
+          <div class="section-header-center">
+            <h2>Program Strategis</h2>
+            <p>
+              Untuk mewujudkan dan mengimplementasikan Visi, Misi, dan Rencana
+              Strategis, organisasi menyajikan program unggulan yang
+              multi-parti.
+            </p>
+          </div>
+          <div class="programs-grid">
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3>Program Jangka Pendek</h3>
+              <ul>
+                <li>Konsolidasi pengurus dan penataan anggota</li>
+                <li>Penyelenggaraan kajian rutin mingguan</li>
+                <li>Optimalisasi komunikasi dakwah digital</li>
+                <li>Pelatihan manajemen masjid dan organisasi</li>
+              </ul>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Program Jangka Menengah</h3>
+              <ul>
+                <li>Pusat Literasi & Perpustakaan Islam</li>
+                <li>Layanan Zakat, Infaq, Sedekah</li>
+                <li>Rehabilitasi Sarana Prasarana</li>
+                <li>Inkubasi Pemberdayaan Ekonomi Umat</li>
+              </ul>
+            </div>
+            <div class="program-card">
+              <div class="program-icon">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3>Program Jangka Panjang</h3>
+              <ul>
+                <li>Pembangunan Kurikulum Pendidikan</li>
+                <li>Sinergi Dengan Ukhuwah Nasional</li>
+                <li>Kemandirian Finansial Organisasi</li>
+                <li>Pusat Rujukan Solusi Keumatan</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Dewan Pembina & Pengurus -->
+        <section class="board-section">
+          <div class="section-header-center">
+            <h2>Dewan Pembina & Pengurus</h2>
+            <p>
+              Sinergi para payung dakwah yang berdedikasi dalam menjalankan
+              amanah organisasi demi terwujudnya kemaslahatan umat yang
+              berkelanjutan.
+            </p>
+          </div>
+          <div class="board-cards">
+            <div class="board-card">
+              <div class="board-image">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>H. Sulaiman Effendi</h3>
+              <p>Ketua Umum</p>
+            </div>
+            <div class="board-card">
+              <div class="board-image">
+                <img
+                  src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+                  alt="Profile"
+                />
+              </div>
+              <h3>Dr. H. Ahmad Fauzi</h3>
+              <p>Ketua Umum</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Jadwal Sholat Detail -->
+        <section class="prayer-time" id="prayerTime">
+          <h3>Jadwal Sholat Hari Ini</h3>
+          <div class="prayer-grid" id="prayerGrid">
+            <div class="loading">Memuat jadwal sholat...</div>
+          </div>
+        </section>
+
+        <!-- Berita Terbaru -->
+        <section class="articles">
+          <div class="section-header-center">
+            <h2>Berita Terbaru</h2>
+            <p>Kumpulan artikel dan informasi terbaru dari masjid kami</p>
+          </div>
+          <div class="articles-grid" id="articlesGrid">
+            <div class="loading">Memuat artikel...</div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Call to Action -->
+      <section class="cta-section">
+        <div class="container">
+          <h2>Mari Bangun Kemandirian Umat</h2>
+          <h3>
+            Bersama Mewujudkan Ekosistem Dakwah yang Amanah, Sejuk, dan
+            Memberdayakan
+          </h3>
+          <a href="#" class="cta-btn">Gabung Sekarang</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="footer-logo-icon">
+                <i class="fas fa-mosque"></i>
+              </div>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-link"></i> Tautan Cepat</h4>
+            <ul class="footer-links">
+              <li><a href="index.html"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+              <li><a href="profile.html"><i class="fas fa-chevron-right"></i> Profil</a></li>
+              <li><a href="blog.html"><i class="fas fa-chevron-right"></i> Blog</a></li>
+              <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Kontak</a></li>
+              <li><a href="infaq.html"><i class="fas fa-chevron-right"></i> Infaq</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+62 812 9000 0276</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>info@masjidnurulhuda.com</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Buka 24 Jam</span>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marked-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map-placeholder">
+              <i class="fas fa-map"></i>
+              <span>Lihat di Google Maps</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

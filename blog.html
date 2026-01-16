@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog - Masjid Nurul Huda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Islamic Background Pattern -->
+    <div class="islamic-pattern-bg"></div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span class="bismillah arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+            <span class="location" id="locationText">
+              <i class="fas fa-map-marker-alt"></i>
+              <span id="locationName">Loading...</span>
+            </span>
+            <span class="prayer-times-compact" id="prayerTimesCompact">
+              <i class="fas fa-clock"></i>
+              <span id="prayerTimesText">Memuat jadwal...</span>
+            </span>
+            <span class="operating-hours">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="currentDayTime"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-mosque"></i>
+            </div>
+            <div class="logo-text">
+              <h1>Masjid Nurul Huda</h1>
+              <span class="logo-tagline arabic-text">نُورُ الْهُدَى</span>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Toggle -->
+          <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          
+          <!-- Mobile Menu Overlay -->
+          <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+          
+          <nav class="nav" id="mainNav">
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <i class="fas fa-times"></i>
+            </button>
+            <a href="index.html" class="nav-link">
+              <i class="fas fa-home"></i> Beranda
+            </a>
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-info-circle"></i> Profil
+            </a>
+            <a href="blog.html" class="nav-link active">
+              <i class="fas fa-newspaper"></i> Artikel
+            </a>
+            <a href="contact.html" class="nav-link">
+              <i class="fas fa-envelope"></i> Kontak
+            </a>
+            <a href="infaq.html" class="nav-link infaq-btn">
+              <i class="fas fa-hand-holding-heart"></i> Infaq
+            </a>
+            <a href="tel:+628129000276" class="nav-link nav-contact-mobile">
+              <i class="fas fa-phone"></i> +62 812 9000 0276
+            </a>
+          </nav>
+          <a href="tel:+628129000276" class="header-contact-btn">
+            <i class="fas fa-phone"></i> +62 812 9000 0276
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Blog Hero Section -->
+      <section class="blog-hero">
+        <div class="blog-hero-overlay"></div>
+        <div class="blog-hero-geometric"></div>
+        <div class="blog-hero-geometric left"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="blog-hero-geometric right"><i class="fas fa-star-and-crescent"></i></div>
+        <div class="container">
+          <div class="blog-hero-content">
+            <p class="blog-hero-arabic arabic-text">الْعِلْمُ</p>
+            <div class="blog-hero-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h1 class="blog-hero-title">Blog & Artikel</h1>
+            <p class="blog-hero-subtitle">Berbagi ilmu dan informasi seputar keislaman</p>
+          </div>
+        </div>
+        <div class="blog-hero-pattern"></div>
+        <div class="blog-hero-scroll">
+          <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="blog-layout">
+          <!-- Main Content -->
+          <div class="blog-content">
+            <div class="blog-posts-grid" id="blogPostsGrid">
+              <div class="loading">
+                <i class="fas fa-spinner fa-spin"></i> Memuat artikel...
+              </div>
+            </div>
+
+            <div class="pagination" id="pagination" style="display: none">
+              <button
+                class="pagination-btn"
+                id="loadMoreBtn"
+                onclick="loadMorePosts()"
+              >
+                <i class="fas fa-arrow-down"></i> Muat Lebih Banyak
+              </button>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="blog-sidebar">
+            <!-- Categories Widget -->
+            <div class="sidebar-widget">
+              <h3>Pilih Kategori Informasi Lainnya</h3>
+              <ul class="category-list">
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+
+            <!-- Recent Posts Widget -->
+            <div class="sidebar-widget">
+              <h3>Postingan Terbaru</h3>
+              <div class="recent-posts" id="recentPosts">
+                <div class="loading-small">Memuat...</div>
+              </div>
+            </div>
+
+            <!-- Archive Widget -->
+            <div class="sidebar-widget">
+              <h3><i class="fas fa-calendar-alt"></i> Arsip Artikel</h3>
+              <div class="archive-navigation" id="archiveNav">
+                <div class="loading-small">Memuat arsip...</div>
+              </div>
+            </div>
+
+            <!-- Advertisement Widget -->
+            <div class="sidebar-widget sidebar-ad">
+              <div class="ad-content">
+                <h4>Mengajak Pertumbuhan Rohani</h4>
+                <p class="ad-title">
+                  Sudah Saatnya Semua UMKM Melek Ekspor untuk Ekonomi yang Lebih
+                  Kuat
+                </p>
+                <p class="ad-subtitle">
+                  Bikin web ekspor hanya di webekspor.com
+                </p>
+                <button class="ad-btn">PROMO HANYA 500RIBUAN AJA!</button>
+                <div class="ad-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
+                    alt="Promo"
+                  />
+                </div>
+              </div>
+            </div>
+
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-pattern"></div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-mosque"></i>
+              <h3>Masjid Nurul Huda</h3>
+            </div>
+            <p class="footer-tagline arabic-text">بَيْتُ اللَّهِ</p>
+            <p>
+              Wadah Ukhuwah yang berfokus pada penguatan nilai keislaman dan
+              pemberdayaan umat berdasarkan amanah dan keadilan.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-phone-alt"></i> Kontak</h4>
+            <p><i class="fas fa-phone"></i> +62 812 9000 0276</p>
+            <p><i class="fas fa-envelope"></i> info@masjidnurulhuda.com</p>
+          </div>
+          <div class="footer-section">
+            <h4><i class="fas fa-map-marker-alt"></i> Alamat</h4>
+            <p id="footerLocation">Loading...</p>
+            <div class="footer-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.799561!3d-6.208763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1234567890"
+                width="100%"
+                height="150"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer-verse">
+          <p class="arabic-text">"إِنَّمَا يَعْمُرُ مَسَاجِدَ اللَّهِ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ"</p>
+          <p class="verse-translation">"Hanya yang memakmurkan masjid Allah ialah orang-orang yang beriman kepada Allah dan hari kemudian" (QS. At-Taubah: 18)</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="#" style="color: inherit; text-decoration: none;">Stellar Digital Innovations</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
