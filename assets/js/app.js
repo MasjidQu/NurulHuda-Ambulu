@@ -1,5 +1,5 @@
 // API Configuration
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://api_masjid.stellardigitalinnovations.com";
 const SITE_ID = "143f5dd6-aa43-4b7c-bcdf-2d091301b69c";
 const LOCATION_ID = "e4a6222cdb5b34375400904f03d8e6a5"; // Default location ID for prayer schedule
 const ADDRESS = "Ambulu - Jember";
