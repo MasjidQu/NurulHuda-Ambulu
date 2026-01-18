@@ -1,12 +1,12 @@
 // API Configuration
 const API_BASE_URL = "http://localhost:8080";
-const SITE_DOMAIN = window.location.hostname;
 const SITE_ID = "143f5dd6-aa43-4b7c-bcdf-2d091301b69c";
+const LOCATION_ID = "e4a6222cdb5b34375400904f03d8e6a5"; // Default location ID for prayer schedule
 const ADDRESS = "Ambulu - Jember";
 const TELP = "+62 812 9000 0276";
 const EMAIL = "info@masjidnurulhuda.com";
 const MAP_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.599691112011!2d113.60700500000002!3d-8.342512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69b6517e45ae3%3A0x829f0a64dafd48f8!2sMasjid%20Nurul%20Huda!5e0!3m2!1sid!2sid!4v1768313681134!5m2!1sid!2sid";
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.599691112011!2d113.60700500000002!3d-8.342512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd69b6517e45ae3%3A0x829f0a64dafd48f8!2sMasjid%20Nurul%20Huda!5e0!3m2!1sid!2sid!4v1768552572045!5m2!1sid!2sid";
 
 // Infaq Configuration
 const QRIS_IMAGE = "https://via.placeholder.com/400x400?text=QRIS+Masjid"; // Replace with actual QRIS image URL
@@ -99,7 +99,7 @@ function initMobileMenu() {
 async function loadSiteInfo() {
   try {
     const response = await fetch(
-      `${API_BASE_URL}/api/site?domain=${SITE_DOMAIN}`
+      `${API_BASE_URL}/api/site?site_id=${SITE_ID}`
     );
     const result = await response.json();
 
@@ -153,7 +153,7 @@ async function loadSiteInfo() {
     console.error("Error loading site info:", error);
   }
 }
-
+//perbaiki jadwal waktu sholat, munculkan juga lognya untuk troubleshooting. harusnya dia
 // Update current day and time
 function updateCurrentDayTime() {
   const currentDayTime = document.getElementById("currentDayTime");
@@ -165,14 +165,14 @@ function updateCurrentDayTime() {
   const hours = String(now.getHours()).padStart(2, "0");
   const minutes = String(now.getMinutes()).padStart(2, "0");
 
-  currentDayTime.textContent = `${day} ${hours}:${minutes} - 16:00`;
+  currentDayTime.textContent = `${day} - ${hours}:${minutes}`;
 
   // Update every minute
   setInterval(() => {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, "0");
     const minutes = String(now.getMinutes()).padStart(2, "0");
-    currentDayTime.textContent = `${day} ${hours}:${minutes} - 16:00`;
+    currentDayTime.textContent = `${day} - ${hours}:${minutes}`;
   }, 60000);
 }
 
@@ -441,14 +441,12 @@ function updateContactInfo() {
     }
   });
 
-  // Update map iframes
+  // Update map iframe (only main map, not footer)
   if (typeof MAP_URL !== "undefined") {
-    const mapFrames = document.querySelectorAll(
-      'iframe[src*="google.com/maps"], #mapFrame'
-    );
-    mapFrames.forEach((frame) => {
-      frame.src = MAP_URL;
-    });
+    const mapFrame = document.getElementById('mapFrame');
+    if (mapFrame) {
+      mapFrame.src = MAP_URL;
+    }
   }
 
   // Update WhatsApp link
